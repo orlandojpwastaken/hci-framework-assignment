@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orlando's Portfolio</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 dark:bg-gray-800">
+        <div class="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">My Portfolio</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="education.html"
+                            class="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Education</a>
+                    </li>
+                    <li>
+                        <a href="skills.html"
+                            class="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Programming
+                            Skills</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="h-10"></div>
+    <h1 class="text-center mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">More
+        About Me</h1>
+    <div class="h-10"></div>
+
+    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
+            data-tabs-toggle="#default-tab-content" role="tablist">
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Biodata</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button
+                    class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                    id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+                    aria-selected="false">Hobbies</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button
+                    class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                    id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+                    aria-selected="false">Interests</button>
+            </li>
+        </ul>
+    </div>
+    <div id="default-tab-content">
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-900" id="profile" role="tabpanel"
+            aria-labelledby="profile-tab">
+            <div class="flex justify-center">
+                <a
+                    class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <svg class="w-[200px] h-[200px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 18" style="padding: 10%;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                            d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z" />
+                    </svg>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Biodata:</h5>
+                        <ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+                            <li>
+                                Full Name: Orlando Jonathan Padiman
+                            </li>
+                            <li>
+                                Gender:
+                            </li>
+                            <li>
+                                <div class="flex">
+                                    <div class="flex items-center mr-4">
+                                        <input disabled checked id="disabled-radio-2" type="radio" value=""
+                                            name="disabled-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="disabled-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Male</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input disabled id="disabled-radio-1" type="radio" value=""
+                                            name="disabled-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="disabled-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Female</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                Age: 18
+                            </li>
+                            <li>
+                                Birthday: 5 April 2005
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-900" id="dashboard" role="tabpanel"
+            aria-labelledby="dashboard-tab">
+            <div class="flex justify-center">
+                <a
+                    class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <svg class="w-[200px] h-[200px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18" style="padding: 10%;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19 13v-3a9 9 0 1 0-18 0v3m2-3h3v7H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2Zm11 0h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3v-7Z" />
+                    </svg>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hobbies</h5>
+                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                            <li>
+                                Listening to Music
+                            </li>
+                            <p> I like listening to different types of music in my free time.
+                                I'm not particularly picky with the type of music I listen to
+                                so I guess I like any genre of music.
+                            </p>
+                            <li>
+                                Playing Guitar
+                            </li>
+                            <p>
+                                I have been playing guitar since high school since I really enjoy
+                                not only listening to music, but playing it myself. Since I have
+                                an interest in most genre of music, I play both the acoustic
+                                and electric guitar.
+                            </p>
+                            <li>
+                                Playing Games
+                            </li>
+                            <p>
+                                If I'm not feeling productive, I tend to tilt to games to keep me
+                                entertained. Like my preference in music, I'm not very picky with
+                                the games I play, so I play a wide variety of games.
+                            </p>
+                            <li>
+                                Mental Breakdowns
+                            </li>
+                            <p>
+                                I'm a Computer Science student.
+                            </p>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-900" id="settings" role="tabpanel"
+            aria-labelledby="settings-tab">
+            <div class="flex justify-center">
+                <a
+                    class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <svg class="w-[200px] h-[200px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="none" viewBox="0 0 14 20"
+                        style="padding: 10%;">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 7a3 3 0 0 1 3-3M5 19h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 1 7c0 4 4 5 4 9h4Z" />
+                    </svg>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Interests</h5>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                <li>
+                                    Human Psychology
+                                </li>
+                                <li>
+                                    Philosophy
+                                </li>
+                                <li>
+                                    Music Theory
+                                </li>
+                                <li>
+                                    Movie Analysis
+                                </li>
+                                <li>
+                                    Photography
+                                </li>
+                                <li>
+                                    Cinematography
+                                </li>
+                            </ul>
+                            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                <li>
+                                    Keyboards
+                                </li>
+                                <li>
+                                    Computers
+                                </li>
+                                <li>
+                                    Psychological Horror
+                                </li>
+                                <li>
+                                    Greek Mythology
+                                </li>
+                                <li>
+                                    Criminal Cases
+                                </li>
+                                <li>
+                                    Women.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+</body>
+
+</html>
